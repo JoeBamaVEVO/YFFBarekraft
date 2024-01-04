@@ -5,7 +5,7 @@ import { getAllQuestions } from './api/api'
 import { Iquestions } from './api/types'; // Import the type definition for Iquestions
 
 
-
+export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   let data = await getAllQuestions();

@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+export const dynamic = 'force-dynamic';
 
 export default function Questions({ questions }: { questions: Array<{ id: string, question: string, answer: string }> }) {
     return (
