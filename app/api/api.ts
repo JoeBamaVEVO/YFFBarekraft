@@ -1,9 +1,11 @@
+import { sql } from '@vercel/postgres';
 import { Iquestions } from './types';
 
-const baseURL = 'http://localhost:3001';
-
-export const getAllQuestions = async (): Promise<Iquestions[]>  => {
-    const response = await fetch(`${baseURL}/questions`);
-    const questions = await response.json();
-    return questions;
+export const getAllQuestions = async ()  => {
+    try {
+        const result = await sql<Iquestions>`SELECT * FROM questions`;
+        return result.rows;
+    } catch (error) {
+        throw error;
+    }
 }

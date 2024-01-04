@@ -1,8 +1,7 @@
 
 import React, { useState } from 'react';
 
-export default function Questions({ questions }: { questions: Array<{ question: string, answer: string }> }) {
-
+export default function Questions({ questions }: { questions: Array<{ id: string, question: string, answer: string }> }) {
     return (
         <div>
             {questions.map((item, index) => (
@@ -24,3 +23,5 @@ export default function Questions({ questions }: { questions: Array<{ question: 
     
     );
 }
+
+
