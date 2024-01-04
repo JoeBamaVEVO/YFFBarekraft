@@ -6,7 +6,7 @@ export default function Questions({ questions }: { questions: Array<{ id: string
         console.log("Heisann Sveisann!"),
         <div>
             {questions.map((item, index) => (
-                <div key={index} className="collapse bg-white mt-5 width-50%">
+                <div key={index} className="collapse collapse-arrow bg-white mt-5 width-50%">
                     <input
                         type="radio"
                         name={`my-accordion-${index}`}  
