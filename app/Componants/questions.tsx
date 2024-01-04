@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 export default function Questions({ questions }: { questions: Array<{ id: string, question: string, answer: string }> }) {
     return (
+        console.log("Heisann Sveisann!"),
         <div>
             {questions.map((item, index) => (
                 <div key={index} className="collapse bg-white mt-5 width-50%">
