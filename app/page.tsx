@@ -6,6 +6,7 @@ import { Iquestions } from './api/types'; // Import the type definition for Ique
 
 
 
+
 export default async function Home() {
   let data = await getAllQuestions();
   console.log(data);
@@ -15,7 +16,7 @@ export default async function Home() {
         <h1 className='font-bold text-xl'>Info side om bærekraft</h1>
         <Info />
         <h1 className='font-bold text-xl'>Spørsmål</h1>
-        <div className='w-1/3'>
+        <div className='w-2/3'>
           <Questions questions={data} />       
         </div>
     </main>
