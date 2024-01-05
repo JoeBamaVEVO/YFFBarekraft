@@ -10,7 +10,7 @@ export default function Questions({ questions }: { questions: Array<{ id: string
                 <div key={index} className="collapse collapse-arrow bg-slate-700 mt-5">
                     <input
                         type="radio"
-                        name={`my-accordion-${index}`}  
+                        name={`my-accordion`}  
                     />
                     <div className="collapse-title text-xl font-medium text-white">
                         {item.question}
